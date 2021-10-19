@@ -1,0 +1,17 @@
+<div class="col-12 text-center mt-5 text-light">Album List</div>
+<ul class="albums-list list-group mb-3">
+  <li
+    *ngFor="let album of albums"
+    [ngClass]="{ selected: selectedAlbum?.id === album?.id }"
+    class="selected list-group-item d-flex justify-content-between"
+    (click)="handleAlbumSelect(album)"
+  >
+    <div>
+      <h5 class="text-sm-start">Title</h5>
+      <h6 class="my-0">{{ album?.title }}</h6>
+    </div>
+    <div class="align-self-center">
+      <span class="text-primary">Id: {{ album?.id }}</span>
+    </div>
+  </li>
+</ul>

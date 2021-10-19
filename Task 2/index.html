@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Task 2</title>
+	</head>
+	<body>
+		<div class="container">
+			<h4 class="title-goal">PEDRO'S WEEKLY GOAL</h4>
+			<section class="stats">
+				<div class="left-side">
+					<object
+						id="svg"
+						data="asset.svg"
+						type="image/svg+xml"
+						class="svg"
+					></object>
+					<div class="text-container">
+						<h4 class="text-title">Current</h4>
+						<h1 class="text-value">38m</h1>
+						<h2 class="text-goal">50m Goal</h2>
+					</div>
+				</div>
+				<div class="right-side">
+					<div class="remain">
+						<span class="b-text more-wins">12</span> more mins to achieve
+						this<br />
+						week's Goal.
+					</div>
+					<div class="streaks">
+						<div class="current">
+							<span class="b-text current-streak">4</span> <br />Current streak
+						</div>
+						<div class="best">
+							<span class="b-text best-streak">12</span> <br />Best streak
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="half">
+				<div class="leaderboard-title">LEADERBOARD</div>
+				<form action="/" class="dropdown">
+					<select class="select">
+						<option selected value="Week">Week</option>
+						<option value="Month">Month</option>
+					</select>
+				</form>
+			</section>
+			<section class="leaderboard">
+				<div class="row">
+					<div class="left-row-side">
+						<div class="row-number">1</div>
+						<div class="row-worker-name">Walter Wynne</div>
+					</div>
+					<div class="right-row-side">
+						<div class="row-score" id="first-score">105m</div>
+						<object data="arrow.svg" type="image/svg+xml"></object>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left-row-side">
+						<div class="row-number unselected">2</div>
+						<div class="row-worker-name">Annabel Ferdinand</div>
+					</div>
+					<div class="right-row-side">
+						<div class="row-score" id="second-score">52m</div>
+						<div class="row-icon circle"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="left-row-side">
+						<div class="row-number">3</div>
+						<div class="row-worker-name">Marty McFly</div>
+					</div>
+					<div class="right-row-side">
+						<div class="row-score" id="third-score">50m</div>
+						<object data="arrow.svg" type="image/svg+xml"></object>
+					</div>
+				</div>
+				<div class="row selected" id="you">
+					<div class="left-row-side">
+						<div class="row-number" id="num">7</div>
+						<div class="row-worker-name">You</div>
+					</div>
+					<div class="right-row-side">
+						<div class="row-score" id="fourth-score">38m</div>
+						<object
+							id="you-arrow"
+							data="arrow.svg"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

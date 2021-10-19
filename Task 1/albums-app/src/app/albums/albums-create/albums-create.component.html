@@ -1,0 +1,8 @@
+<h6 class="text-light">Click to create random album</h6>
+<div
+  class="btn btn-primary"
+  (click)="handleAlbumCreate()"
+  [ngClass]="{ disabled: !isAlbumsListView }"
+>
+  Create
+</div>

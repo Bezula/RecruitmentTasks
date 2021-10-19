@@ -1,0 +1,8 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="40px" viewBox="4 16 20 40" enable-background="new 0 14 20 40" xml:space="preserve" >
+	<path fill="green" stroke="green" id="you-arrow"
+    d="M 5,45
+       Q 10,40 15,45
+       L 10, 30
+       L 5, 45"
+        />
+</svg>
